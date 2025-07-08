@@ -1,76 +1,87 @@
-# 📊 YouTube Trending Video Analysis
+# 📊 YouTube Trending Video Analysis (🇨🇦 Canada Edition)
 
-What makes a video go viral on YouTube? This project dives into the US trending videos dataset from Kaggle to uncover patterns, behaviors, and oddities in what people watch and when.
+What makes a video go viral in Canada? This project dives into trending YouTube videos using real public data to uncover insights about views, tags, categories, timing, and more — all powered by Python & pandas.
 
 ---
 
 ## 📁 Dataset
-- **Source**: [Kaggle - Trending YouTube Video Statistics](https://www.kaggle.com/datasets/datasnaek/youtube-new)
-- **File Used**: `Cavideos.csv`
-- Contains ~40,881 trending YouTube video records across time.
+- **Source**: [Kaggle – YouTube Trending Videos](https://www.kaggle.com/datasets/datasnaek/youtube-new)
+- **File Used**: `CAvideos.csv`
+- Covers thousands of trending videos in Canada with metrics like views, likes, publish time, and more.
 
 ---
 
-## 🎯 Project Goals
-- Clean and preprocess a real-world dataset
-- Engineer new features like `days_to_trend`, `publish_hour`, etc.
-- Visualize data to find trends in views, categories, tags, and posting time
-- Present findings in a visually engaging and interpretable format
+## 🎯 Project Objectives
+
+- Clean and preprocess real-world video trend data
+- Engineer new features such as:
+  - `days_to_trend`
+  - `publish_hour`
+  - `category_name` (mapped from `category_id`)
+- Visualize engagement trends and video performance
+- Highlight content strategy insights with clean graphs
 
 ---
 
-## 🔧 Tools Used
-- Python 🐍
-- pandas
-- matplotlib / seaborn / plotly
-- wordcloud
-- Jupyter Notebook
+## 🔧 Tech Stack
+
+| Tool       | Usage                        |
+|------------|------------------------------|
+| `pandas`   | Data manipulation            |
+| `matplotlib/seaborn` | Visualizations     |
+| `wordcloud` | Tag frequency clouds         |
+| `plotly`   | Interactive plots (optional) |
+| `Jupyter`  | Development environment      |
 
 ---
 
 ## 📊 Key Visuals
 
-### 📌 Trending Categories
-![Categories](assets/category_boxplot.png)
+### 📌 Top Trending Categories  
+![Top Trending Categories](assets/top_trending_categories.png)
 
-### ☁️ Most Common Tags
-![WordCloud](assets/wordcloud_tags.png)
+### 👑 Top 10 Channels with Most Trending Videos  
+![Top Channels](assets/top_10_channels.png)
 
-### ⏱️ When Should You Publish?
-![Views by Hour](assets/views_by_hour.png)
+### ☁️ Most Common Tags in Trending Videos  
+![WordCloud](assets/tags_wordcloud.png)
 
-### 🔥 Likes vs Views Scatter
-![Scatter](assets/likes_vs_views.png)
+### ⏱️ Average Views by Publish Hour  
+![Publish Hour](assets/views_by_publish_hour.png)
+
+### 📈 Correlation Between Metrics  
+![Correlation Heatmap](assets/correlation_heatmap.png)
+
+### 🕰️ Days Taken to Trend  
+![Days to Trend](assets/days_to_trend.png)
+
+### 🔥 Likes vs Views Colored by Category  
+![Likes vs Views](assets/likes_vs_views_by_category.png)
+
+### 📦 Views Distribution by Category  
+![Views by Category](assets/views_by_category.png)
 
 ---
 
 ## 🔍 Key Insights
 
-- **Music, Comedy, and Entertainment** dominate trending categories.
-- Videos with missing or default tags like `'None'` still manage to trend.
-- Most trending videos are published between **noon and 6 PM**.
-- The **"days to trend"** varies wildly—some videos trend within hours, others take days.
-- Channels like *Logan Paul* and *Gordon Ramsay* have high trending frequency.
+- **Music & Entertainment** absolutely dominate the Canadian trending space.
+- Some videos trend **within 24 hours**, others take **days to catch fire**.
+- **Late afternoon (3 PM to 6 PM)** appears to be the best publish window for higher views.
+- **Tags like “punjabi”, “trump”, “logan paul”** appear frequently—spicy content pulls views.
+- Some channels (like *Gordon Ramsay* or *Logan Paul*) repeatedly show up—trend kings.
 
 ---
 
-## 🚀 How to Run
-1. Clone the repo
-2. Run `youtube_analysis.ipynb` in a Jupyter environment
-3. Visuals are saved inside `assets/`
+## 🚀 Run It Yourself
+
+1. Clone the repo  
+2. Download `CAvideos.csv` + `CA_category_id.json` from Kaggle  
+3. Place them in `/data`  
+4. Run `notebooks/youtube_analysis.ipynb`  
+5. Visuals will be saved in `/assets`
 
 ---
 
-## 💡 Possible Improvements
-- Sentiment analysis of titles/descriptions
-- Predictive model: Will this video trend?
-- Compare trends across multiple countries
-
----
-
-## 📬 Contact
-Made with 💻 by [YourName]  
-[LinkedIn] | [GitHub]
-
----
+## 🛠️ Project Structure
 
