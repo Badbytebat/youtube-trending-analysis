@@ -85,3 +85,26 @@ What makes a video go viral in Canada? This project dives into trending YouTube 
 
 ## 🛠️ Project Structure
 
+youtube-trending-analysis/
+├── data/ # Dataset (not pushed to GitHub)
+├── assets/ # All generated charts
+├── notebooks/
+│ └── youtube_analysis.ipynb
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+
+
+## 💡 Future Work
+
+- 🎭 Sentiment analysis on titles/descriptions
+- 🔮 Predict if a video will trend based on metadata
+- 🌍 Compare across other countries (IN, US, GB...)
+
+---
+
+## 🧠 Author
+
+Made with ☕ and midnight madness by **Ritesh Manandhar**  
+[GitHub](https://github.com/badbytebat) • [LinkedIn](https://linkedin.com/in/ritesh-bytegenosis)
